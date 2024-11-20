@@ -1,7 +1,7 @@
 {
-	"name": "eleventy-base-blog",
-	"version": "9.0.0",
-	"description": "A starter repository for a blog web site using the Eleventy site generator.",
+	"name": "adamj-blog",
+	"version": "1.0.0",
+	"description": "A blog for all thoughts of AdamJ.github.io.",
 	"type": "module",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
@@ -15,12 +15,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/11ty/eleventy-base-blog.git"
+		"url": "git://github.com/AdamJ/Blog.git"
 	},
 	"author": {
-		"name": "Zach Leatherman",
-		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
+		"name": "Adam Jolicoeur",
+		"email": "design@adamjolicoeur.com",
+		"url": "https://www.adamjolicoeur.com"
 	},
 	"license": "MIT",
 	"engines": {
@@ -31,9 +31,19 @@
 		"url": "https://opencollective.com/11ty"
 	},
 	"bugs": {
+		"url": "https://github.com/AdamJ/Blog/issues"
+	},
+	"homepage": "https://github.com/AdamJ/Blog#readme",
+	"11tyBlogVersion": "9.0.0",
+	"11tyCreator": {
+		"name": "Zach Leatherman",
+		"email": "zachleatherman@gmail.com",
+		"url": "https://zachleat.com/"
+	},
+	"11tyBugs": {
 		"url": "https://github.com/11ty/eleventy-base-blog/issues"
 	},
-	"homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+	"11tyHomepage": "https://github.com/11ty/eleventy-base-blog#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^3.0.0",
 		"@11ty/eleventy-img": "^5.0.0",
