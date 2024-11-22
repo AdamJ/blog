@@ -1,9 +1,9 @@
 ---js
 const eleventyNavigation = {
 	key: "About",
+	title: "About",
 	order: 3
 };
 ---
-# About
 
-I am a person that writes stuff.
+UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.

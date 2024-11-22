@@ -1,10 +1,10 @@
 ---js
 const eleventyNavigation = {
-	key: "Home",
+	key: "Posts",
 	order: 1
 };
 
-const numberOfLatestPostsToShow = 3;
+const numberOfLatestPostsToShow = 3	;
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
