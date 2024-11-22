@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tagged &#39;number 2&#39;</title>
+    <title>Tagged &#39;general&#39;</title>
     <meta name="description" content="A blog for all thoughts of AdamJ.github.io.">
     <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="AdamJ&#39;s Blog">
+    <link rel="stylesheet" media="(prefers-color-scheme:light)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css" onload="document.documentElement.classList.add('sl-theme-dark');">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js"></script>
     
-    <style>.postlist { counter-reset: start-from 2 }
+    <style>.postlist { counter-reset: start-from 4 }
 /* Message Box */
 .message-box {
 	--color-message-box: #ffc;
@@ -300,6 +303,23 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+
+/* Buttons */
+sl-button::part(base) {
+  font-weight: 700;
+  font-size: 1rem;
+}
+sl-button.card-button::part(base) {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.button-overlay {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
 }</style>
   </head>
   <body>
@@ -310,8 +330,8 @@ header {
       <nav>
         <h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
         <ul class="nav">
-          <li class="nav-item"><a href="/blog/">Home</a></li>
-          <li class="nav-item"><a href="/blog/">Archive</a></li>
+          <li class="nav-item"><a href="/blog/posts/">Posts</a></li>
+          <li class="nav-item"><a href="/blog/archive/">Archive</a></li>
           <li class="nav-item"><a href="/blog/about/">About</a></li>
           <li class="nav-item"><a href="/blog/feed/feed.xml">Feed</a></li>
         </ul>
@@ -320,26 +340,13 @@ header {
 
     <main id="skip">
       <heading-anchors>
-        <!-- Delete this block, which will also remove the component CSS from the bundle -->
+        <!-- Delete this block, which will also remove the component CSS from the bundle
 <div class="message-box">
 	<p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
 </div>
-<!-- Stop deleting -->
+Stop deleting -->
 
-<h1 id="tagged-number-2">Tagged “number 2”</h1>
-
-
-
-<ol reversed="" class="postlist">
-	<li class="postlist-item">
-		<a href="/blog/blog/secondpost/" class="postlist-link">This is my second post with a much longer title.</a>
-		<time class="postlist-date" datetime="2018-07-04">July 2018</time>
-	</li>
-</ol>
-
-
-<p>See <a href="/blog/tags/">all tags</a>.</p>
-
+Home page
 
       </heading-anchors>
     </main>
@@ -348,7 +355,8 @@ header {
       <p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
     </footer>
 
-    <!-- This page `/tags/number-2/` was built on 2024-11-20T16:39:47.799Z -->
+    <!-- This page `/tags/general/` was built on 2024-11-22T19:41:19.992Z -->
     <script type="module" src="/blog/dist/rJ3_G-2ArF.js"></script>
   </body>
+  <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
 </html>

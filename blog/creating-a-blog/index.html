@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is my third post.</title>
-    <meta name="description" content="This is a post on My Blog about win-win survival strategies.">
+    <title>Creating a Blog</title>
+    <meta name="description" content="Yes, another blog.">
     <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="AdamJ&#39;s Blog">
+    <link rel="stylesheet" media="(prefers-color-scheme:light)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css" onload="document.documentElement.classList.add('sl-theme-dark');">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js"></script>
     
     <style>/**
  * okaidia theme for JavaScript, CSS and HTML
@@ -449,6 +452,23 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+
+/* Buttons */
+sl-button::part(base) {
+  font-weight: 700;
+  font-size: 1rem;
+}
+sl-button.card-button::part(base) {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.button-overlay {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
 }</style>
   </head>
   <body>
@@ -459,8 +479,8 @@ header {
       <nav>
         <h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
         <ul class="nav">
-          <li class="nav-item"><a href="/blog/">Home</a></li>
-          <li class="nav-item"><a href="/blog/">Archive</a></li>
+          <li class="nav-item"><a href="/blog/posts/">Posts</a></li>
+          <li class="nav-item"><a href="/blog/archive/">Archive</a></li>
           <li class="nav-item"><a href="/blog/about/">About</a></li>
           <li class="nav-item"><a href="/blog/feed/feed.xml">Feed</a></li>
         </ul>
@@ -470,41 +490,40 @@ header {
     <main id="skip">
       <heading-anchors>
         
-<h1 id="this-is-my-third-post">This is my third post.</h1>
+<h1 id="creating-a-blog">Creating a Blog</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2018-08-24">24 August 2018</time></li>
-	<li><a href="/blog/tags/second-tag/" class="post-tag">second tag</a>, </li>
-	<li><a href="/blog/tags/posts-with-two-tags/" class="post-tag">posts with two tags</a></li>
+  <li>
+    <sl-tag variant="neutral" pill="">
+      <sl-icon name="calendar"></sl-icon>&nbsp;
+      <time datetime="2024-11-05">05 November 2024</time>
+    </sl-tag>
+  </li>
+  <li>
+    <sl-button variant="default" size="small" pill="" href="/blog/tags/general/">
+      <sl-icon slot="prefix" name="tag"></sl-icon>
+      general
+    </sl-button> </li>
+  <li>
+    <sl-button variant="default" size="small" pill="" href="/blog/tags/development/">
+      <sl-icon slot="prefix" name="tag"></sl-icon>
+      development
+    </sl-button></li>
 </ul>
 
-<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-<h2 id="code">Code</h2>
-<h3 id="this-is-a-very-long-heading-that-i-want-to-wrap-this-is-a-very-long-heading-that-i-want-to-wrap-this-is-a-very-long-heading-that-i-want-to-wrap-this-is-a-very-long-heading-that-i-want-to-wrap">This is a very long heading that I want to wrap This is a very long heading that I want to wrap This is a very long heading that I want to wrap This is a very long heading that I want to wrap</h3>
-<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-<pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// this is a command</span>
-<span class="token keyword">function</span> <span class="token function">myCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-	<span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-	counter<span class="token operator">++</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<h2 id="why-create-a-blog-why-not">Why create a blog? Why not?</h2>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="https://www.11ty.dev/docs/quicktips/tag-pages/">11ty quick tips - tag pages</a></li>
+<li><a href="https://mozilla.github.io/nunjucks/templating.html">nunjucks/templating</a></li>
+<li><a href="https://dev.to/chaoocharles/responsive-navigation-bar-tutorial-html-css-3fb2">Responsive navigation bar tutorial html css</a></li>
+<li><a href="https://www.ibm.com/able/toolkit/design/overview">IBM Accessibility Toolkit</a></li>
+<li><a href="https://11ty.rocks/posts/going-beyond-static-with-eleventy/#web-component-generator">Going Beyond Static with Eleventy/#web-component-generator</a></li>
+<li><a href="https://alexnorell.com/post/set-up-gpg/">Set Up GPG</a></li>
+<li><a href="https://www.creativebloq.com/typography/20-perfect-font-pairings-3132120">20 Perfect Font Pairings</a></li>
+</ul>
 
-<span class="token comment">// Test with a line break above this line.</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="heading-with-a-link">Heading with a <a href="#code">link</a></h3>
-<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-<pre><code>// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
-
-// Test with a line break above this line.
-console.log('Test');
-</code></pre>
-<h2 id="section-header">Section Header</h2>
-<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/blog/secondpost/">This is my second post with a much longer title.</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/blog/fourthpost/">This is my fourth post</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/blog/shoelace-and-dark-mode/">Shoelace and Dark Mode</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/blog/custom-icons/">Custom Icons</a></li>
 </ul>
 
       </heading-anchors>
@@ -514,7 +533,8 @@ console.log('Test');
       <p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
     </footer>
 
-    <!-- This page `/blog/thirdpost/` was built on 2024-11-20T16:39:47.759Z -->
+    <!-- This page `/blog/creating-a-blog/` was built on 2024-11-22T19:41:19.993Z -->
     <script type="module" src="/blog/dist/rJ3_G-2ArF.js"></script>
   </body>
+  <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
 </html>

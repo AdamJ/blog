@@ -273,3 +273,19 @@ header {
 	margin-right: 1em;
 }
 
+/* Buttons */
+sl-button::part(base) {
+  font-weight: 700;
+  font-size: 1rem;
+}
+sl-button.card-button::part(base) {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.button-overlay {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
