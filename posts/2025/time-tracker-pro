@@ -1,0 +1,33 @@
+---
+title: Time Tracker Pro
+description: Creating a Storybook site for the first time!
+layout: libdoc_page.liquid
+permalink: "{{ libdocConfig.blogSlug }}/time-tracker-pro/index.html"
+tags:
+    - post
+    - development
+    - tools
+		- apps
+date: 2025-10-10
+ogImageUrl:
+author: AdamJ
+---
+
+I've been working on a time tracking site of and on for years, but never got it over the "hump" into something usable. After playing around with Figma Make, Lovable, and various other "no code" tools, I finally got my idea from concept to reality.
+
+> As Law and Order says...here is my story.
+
+## Starting Out
+
+I started this project as I needed a way to track my daily tasks, but not by using some third party option. I know that a ton of them exist, but I (1) didn't want to rely on something that would either shut down or go behind a paywall and (2) needed to be able customize whatever I wanted without hitting a feature wall or some random constraint. I had been using a time clock app that relied on manually entering everything, but what works for some wasn't working for me.
+
+
+
+
+
+
+
+
+
+
+
