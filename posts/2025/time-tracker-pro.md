@@ -9,7 +9,6 @@ tags:
     - tools
 		- apps
 date: 2025-10-10
-ogImageUrl:
 author: AdamJ
 ---
 
@@ -30,7 +29,7 @@ Starting with the folloqing prompt:
 "
 I’d like to create a time clocking webapp, where users would start their day with a “start day” button and end their day with an “end day” button. Each “start day” button would begin a running timer that should be displayed to users in the navigation title, next to the sheet title.
 New tasks/activities would be entered by a “new task” button that would end the running time of the previous task and start a new running time. Each new task requires a title and should display the starting time.
-Users should be able to edit a previously entered tasks by an “edit” button that only saves changes when a user explicitly taps “save”. 
+Users should be able to edit a previously entered tasks by an “edit” button that only saves changes when a user explicitly taps “save”.
 Users should be able to delete a task viewing the task’s details and then tapping “delete”. This action requires a confirmation through a confirmation screen. Cancelling the action closes dialogue to show the details screen.
 After a user taps “end day” the final time is calculated and displayed to the user. After a day has ended and the information is displayed, users can tap a “post time” button to add the day to an archive of all days (that can be displayed on a calendar). Tapping “post time” will clear the current day’s information so that the next day’s work can be added.
 "
