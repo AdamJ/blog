@@ -15,9 +15,9 @@ jobs:
             node-version: '22.x'
         - name: Install dependencies using a safe clean install, build and test
           run: |
-            npm ci --ignore-scripts
+            pnpm ci --ignore-scripts
         - name: Run Build
-          run: npm run build
+          run: pnpm build
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3.9.3
           with:
