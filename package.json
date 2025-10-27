@@ -12,7 +12,8 @@
     "clean": "rm -rf _site .cache",
     "serve": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx only-allow pnpm"
   },
   "keywords": [],
   "author": "Adam J. Jolicoeur",
