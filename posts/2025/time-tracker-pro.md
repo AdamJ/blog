@@ -1,6 +1,6 @@
 ---
 title: Time Tracker Pro
-description: Creating a Storybook site for the first time!
+description: Taking an idea from concept to reality.
 layout: libdoc_page.liquid
 permalink: "{{ libdocConfig.blogSlug }}/time-tracker-pro/index.html"
 tags:
