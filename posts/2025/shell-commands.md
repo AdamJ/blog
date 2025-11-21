@@ -19,15 +19,15 @@ I often find myself using the command line when prototyping, installing tools (t
 ## Port in Use
 
 ```cmd
-$ sudo lsof -i :3001 # or whatever port you are using
+sudo lsof -i :3001 # or whatever port you are using
 ```
 This is useful when an error occurs around a port being in use. Sometimes, the system just does not let go of that port, even when there is nothing running on it anymore, and you need to find the PID to stop (kill) the process.
 
 ```cmd
-$ sudo lsof -i :3001
-$ 43434 # result of running lsof
-$ kill -9 43434 # stops the running process without prejudice
-$ sudo lsof -i :3001 # run again to double check - should return nothing
+sudo lsof -i :3001
+43434 # result of running lsof
+kill -9 43434 # stops the running process without prejudice
+sudo lsof -i :3001 # run again to double check - should return nothing
 ```
 
 ## Change Default Screenshot Location
@@ -42,6 +42,26 @@ Just change "USERNAME" to whatever your user account is called, and your default
 
 ## Show Hidden Files
 
-On MacOS, hidden files (such as `.zshrc` or `.env`) are only viewable in the terminal. To change that, and have them available in Finder, enter this command: `defaults write com.apple.finder AppleShowAllFiles YES`
+On MacOS, hidden files (such as `.zshrc` or `.env`) are only viewable in the terminal. To change that, and have them available in Finder, enter this command:
 
-Follow that with this command to restart Finder: `killall Finder`
+```cmd
+defaults write com.apple.finder AppleShowAllFiles YES`
+```
+
+Follow that with this command to restart Finder:
+
+```cmd
+killall Finder
+```
+
+## Others
+
+Outside of those listed above, I have a common set of commands that I've added aliases for, primarily centered around Git commands (I prefer the command line to GUI).
+
+```cmd
+  alias gs="git status"
+  alias ga="git add ."
+  alias gf="git fetch"
+  alias gpom="git pull --rebase origin main"
+  alias gl="git log --graph --decorate --oneline"
+```
