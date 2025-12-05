@@ -15,9 +15,9 @@ author: AdamJ
 
 ## Why
 
-While purusing LinkedIn, I [read about an idea to use Figma Make](https://www.linkedin.com/posts/molly-hellmuth-tsacudakis-9155725a_figma-tip-let-figma-make-write-your-design-activity-7402708400402329600-2ucX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAALOEwoB5BFkpyY1H3HMc1mC8xuSTVFpBJw) to create a design system documentation site...
+While perusing LinkedIn, I [read about an idea to use Figma Make](https://www.linkedin.com/posts/molly-hellmuth-tsacudakis-9155725a_figma-tip-let-figma-make-write-your-design-activity-7402708400402329600-2ucX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAALOEwoB5BFkpyY1H3HMc1mC8xuSTVFpBJw) to create a design system documentation site...
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7402708389124091904?collapsed=1" height="595" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7402708389124091904?collapsed=1" height="595" width="504" frameborder="0" allowfullscreen title="Embedded post"></iframe>
 
 ## What is Figma Make?
 
@@ -25,9 +25,9 @@ For those unfamiliar with [Figma Make](https://www.figma.com/make/), it is, at i
 
 Code generation from Figma Make uses React with Typescript and Lucide-React for icons. The generated code appears to be clean and organized (I am not a developer) and it is helpful that a full stylesheet is created, along with a Guidelines markdown file that gives the user the ability to provide the Figma Make AI with rules and guidelines to follow. Thankfully, users do not have to look for this file - by clicking on the settings icon in the chat input, users can edit the guidelines or styles and be brought directly to the `Guidelines.md` file or `globals.css` respectively.
 
-![Screenshot of the guidelines file]()
+![Screenshot of the guidelines file](./images/FigmaMake_GuidelinesFile.png)
 
-![Screenshot of settings options]()
+![Screenshot of settings options](./images/FigmaMake_SettingsMenu.png)
 
 ## The Process
 
@@ -45,11 +45,11 @@ From there, Figma took off
 >
 > Now let me create the remaining component demos:
 
-![Code creation screenshot]()
+![Code creation screenshot](./images/FigmaMake_writing.png)
 
 After a lot of churn (the "Thinking..." and "Building your idea" and "Working out the details" animations became old quickly), Figma created the site.
 
-![First screen of new Figma Make site]()
+![First screen of new Figma Make site](./images/FigmaMake_v1.png)
 
 ### Version 1 - Oops!
 
@@ -99,24 +99,25 @@ Two sections were created: **Foundations** and **Components**.
 
 The Foundations section was broken out by Colors, Typography, Spacing, Elevation, and Border Radius. This matched up with what was in the Variables and Styles areas of the design file.
 
-![Example of Colors page]()
+![Example of Colors page](./images/FigmaMake_Colors.png)
 
-![Example of Typography page]()
+![Example of Typography page](./images/FigmaMake_Typography.png)
 
-![Example of Elevation page]()
+![Example of Elevation page](./images/FigmaMake_Elevation.png)
 
 ### Components
 
 The Components section started off looking good, but I soon realized that there were quite a few of the components missing. I was hoping that it would take any component marked as `Ready for Dev` and create an example from that. Unfortunately, it seemed to randomly take component elements and create documentation and examples from them. Some elements, such as any of the *Destructive* styled items, appeared to be using the wrong color given them a disabled appearance.
 
-![Destructive color example]()
+![Destructive color example](./images/FigmaMake_Badges.png)
 
+| Incorrect Colors | Correct Colors |
 |-- |-- |
-| ![Incorrect Status Colors]() | ![Correct Status Colors]() |
+| ![Incorrect Status Colors](./images/FigmaMake_BadBadges.png) | ![Correct Status Colors](./images/FigmaMake_CorrectBadges.png) |
 
 ## Next Steps
 
-*While I decided to continue experimenting with Figma Make, users do have the option to download the generated code by clicking on the "Code" tab and downloading a Zip file of the code with the download button. As these are small, compared to other buttons in the interface, I'd suspect that even though Figma provides this option, they'd prefer that you continue working in their environemnt.*
+*While I decided to continue experimenting with Figma Make, users do have the option to download the generated code by clicking on the "Code" tab and downloading a Zip file of the code with the download button. As these are small, compared to other buttons in the interface, I'd suspect that even though Figma provides this option, they'd prefer that you continue working in their environment.*
 
 In starting the next steps of this initial test, I proceeded to click the "Fix for me" button (creating a **Version 3**) and, once completed, asked it to do the following:
 
@@ -161,7 +162,8 @@ The app now starts on the landing page and transitions to the documentation when
 You can now customize the entire landing page styling by modifying the CSS custom properties in `/styles/globals.css`!
 ```
 
-![Results of prompt to create a landing page]()
+![Results of prompt to create a landing page](./images/FigmaMake_LandingPage.png)
+![Results of prompt to create a landing page](./images/FigmaMake_LandingPageExt.png)
 
 **A few things to note:**
 
@@ -173,7 +175,7 @@ You can now customize the entire landing page styling by modifying the CSS custo
 
 The next prompt of "Review the Figma design file for additional components. Add them to the site, matching the existing breakdown of the default component, any variants, and an interactive example." was longer and had multiple steps.
 
-While I had expected the initial design file import to still be available, Figma Make immeditaley informed me "I don't see a Figma design file imported in the current project." and provided instructions on how to import a design file. I found the especially odd, given that this whole process started with an import of the design file. Adding to that, Figma did not provide any easy interaction for importing a file - I had to click around and look in the Make file and original Design file to try and find this import functionality. **It'd be great if future iterations included an easy import interaction to update these Make files.**
+While I had expected the initial design file import to still be available, Figma Make immediately informed me "I don't see a Figma design file imported in the current project." and provided instructions on how to import a design file. I found the especially odd, given that this whole process started with an import of the design file. Adding to that, Figma did not provide any easy interaction for importing a file - I had to click around and look in the Make file and original Design file to try and find this import functionality. **It'd be great if future iterations included an easy import interaction to update these Make files.**
 
 I ended up asking the Figma Make AI how to import the design file, and it provided me with instructions.
 
