@@ -17,7 +17,7 @@ jobs:
           run: npm install -g pnpm
         - name: Install dependencies using a safe clean install, build and test
           run: |
-            pnpm ci --ignore-scripts
+            pnpm ci
         - name: Run Build
           run: pnpm build
         - name: Deploy
