@@ -28,7 +28,7 @@
             }
         }
     },
-    "productionUrl": "eleventy-libdoc.netlify.app",
+    "productionUrl": "blog.adamjolicoeur.com",
     "preferences": {
         "colorSchemes": {
             "choices": [
