@@ -17,8 +17,6 @@ author: AdamJ
 
 While perusing LinkedIn, I [read about an idea to use Figma Make](https://www.linkedin.com/posts/molly-hellmuth-tsacudakis-9155725a_figma-tip-let-figma-make-write-your-design-activity-7402708400402329600-2ucX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAALOEwoB5BFkpyY1H3HMc1mC8xuSTVFpBJw) to create a design system documentation site...
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7402708389124091904?collapsed=1" height="595" width="504" frameborder="0" allowfullscreen title="Embedded post"></iframe>
-
 ## What is Figma Make?
 
 For those unfamiliar with [Figma Make](https://www.figma.com/make/), it is, at it's core, similar to Loveable, Replit, or even Claude Code. Give it a prompt and watch it create. The difference with Figma Make is that it can directly reference any existing Figma Design file without having to start up an MCP connection or provide API access to another system.
