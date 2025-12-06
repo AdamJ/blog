@@ -13,6 +13,8 @@ jobs:
           uses: actions/setup-node@v3.8.1
           with:
             node-version: '22.x'
+        - name: Install pnpm
+          run: npm install -g pnpm
         - name: Install dependencies using a safe clean install, build and test
           run: |
             pnpm ci --ignore-scripts
