@@ -1,11 +1,11 @@
 {
-    "siteTitle": "Blog & Docs",
-    "siteDescription": "This is the blog and document site for my projects",
+    "siteTitle": "Blog",
+    "siteDescription": "This is the blog for my thoughts on web development and design.",
     "author": "Adam Jolicoeur",
     "faviconUrl": "/assets/avatar.png",
     "gitLastModifiedDate": true,
     "blogTitle": "Blog",
-    "blogDescription": "A blog about web development and design",
+    "blogDescription": "This is the blog for my thoughts on web development and design.",
     "productionUrl": "https://blog.adamjolicoeur.com",
     "customLinks": [
         {
