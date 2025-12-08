@@ -10,7 +10,6 @@ tags:
     - development
 date: 2025-02-12
 ogImageUrl:
-author: AdamJ
 ---
 
 It all began with this prompt:

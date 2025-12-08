@@ -9,7 +9,6 @@ tags:
     - tools
 date: 2025-01-26
 ogImageUrl:
-author: AdamJ
 ---
 
 Browsing Bluesky, I came across a post on a new terminal using "AI" - WARP. Deciding to give it a try, I've been using it off-and-on for the past month and wanted to write up my thoughts.

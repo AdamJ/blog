@@ -9,7 +9,6 @@ tags:
     - tools
     - apps
 date: 2025-10-10
-author: AdamJ
 ---
 
 I've been working on a time tracking site of and on for years, but never got it over the "hump" into something usable. After playing around with Figma Make, Lovable, and various other "no code" tools, I finally got my idea from concept to reality.

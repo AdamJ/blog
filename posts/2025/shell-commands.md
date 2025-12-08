@@ -11,7 +11,6 @@ tags:
     - development
 date: 2025-11-20
 ogImageUrl:
-author: AdamJ
 ---
 
 I often find myself using the command line when prototyping, installing tools (through Homebrew), or editing simple files with VIM and occasionally run into issues where I need commands that I know exist, but can't remember how they exactly go. Instead of constantly searching for them or adding them into some nebulous `.txt` or `.md` file, I figured I would add them here.
