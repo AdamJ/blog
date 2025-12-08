@@ -1,5 +1,5 @@
 ---
-title: Creating U Design System Documentation Site Using Figma Make
+title: Creating a UI Design System with Figma Make
 description: An experiment in creating a design system documentation site using Figma Make
 layout: libdoc_page.liquid
 permalink: "{{ libdocConfig.blogSlug }}/design-system-in-figma-make/index.html"
@@ -10,12 +10,15 @@ tags:
     - design-system
 date: 2025-12-05
 ogImageUrl:
-author: AdamJ
 ---
 
 ## Why
 
 While perusing LinkedIn, I [read about an idea to use Figma Make](https://www.linkedin.com/posts/molly-hellmuth-tsacudakis-9155725a_figma-tip-let-figma-make-write-your-design-activity-7402708400402329600-2ucX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAALOEwoB5BFkpyY1H3HMc1mC8xuSTVFpBJw) to create a design system documentation site...
+
+{{ 'https://www.linkedin.com/embed/feed/update/urn:li:share:7402708389124091904?collapsed=1' | embed }}
+
+<!-- truncate -->
 
 ## What is Figma Make?
 
@@ -23,9 +26,13 @@ For those unfamiliar with [Figma Make](https://www.figma.com/make/), it is, at i
 
 Code generation from Figma Make uses React with Typescript and Lucide-React for icons. The generated code appears to be clean and organized (I am not a developer) and it is helpful that a full stylesheet is created, along with a Guidelines markdown file that gives the user the ability to provide the Figma Make AI with rules and guidelines to follow. Thankfully, users do not have to look for this file - by clicking on the settings icon in the chat input, users can edit the guidelines or styles and be brought directly to the `Guidelines.md` file or `globals.css` respectively.
 
-![Screenshot of the guidelines file](./images/FigmaMake_GuidelinesFile.png)
+<img class="long-shadow"
+    src="./images/FigmaMake_GuidelinesFile.png"
+    alt="Screenshot of the guidelines file">
 
-![Screenshot of settings options](./images/FigmaMake_SettingsMenu.png)
+<img class="long-shadow"
+    src="./images/FigmaMake_SettingsMenu.png"
+    alt="Screenshot of settings options">
 
 ## The Process
 
@@ -45,7 +52,10 @@ From there, Figma took off
 
 After a lot of churn (the "Thinking..." and "Building your idea" and "Working out the details" animations became old quickly), Figma created the site.
 
-![First screen of new Figma Make site](./images/FigmaMake_v1.png)
+<figure>
+    <img src="./images/FigmaMake_v1.png" alt="First screen of new Figma Make site">
+    <figcaption>First screen of new Figma Make site</figcaption>
+</figure>
 
 ### Version 1 - Oops!
 
@@ -95,11 +105,17 @@ Two sections were created: **Foundations** and **Components**.
 
 The Foundations section was broken out by Colors, Typography, Spacing, Elevation, and Border Radius. This matched up with what was in the Variables and Styles areas of the design file.
 
-![Example of Colors page](./images/FigmaMake_Colors.png)
+<img class="long-shadow"
+    src="./images/FigmaMake_Colors.png"
+    alt="Example of Colors page">
 
-![Example of Typography page](./images/FigmaMake_Typography.png)
+<img class="long-shadow"
+    src="./images/FigmaMake_Elevation.png"
+    alt="Example of Elevation page">
 
-![Example of Elevation page](./images/FigmaMake_Elevation.png)
+<img class="long-shadow"
+    src="./images/FigmaMake_Typography.png"
+    alt="Example of Typography page">
 
 ### Components
 
@@ -158,8 +174,12 @@ The app now starts on the landing page and transitions to the documentation when
 You can now customize the entire landing page styling by modifying the CSS custom properties in `/styles/globals.css`!
 ```
 
-![Results of prompt to create a landing page](./images/FigmaMake_LandingPage.png)
-![Results of prompt to create a landing page](./images/FigmaMake_LandingPageExt.png)
+<img class="long-shadow"
+    src="./images/FigmaMake_LandingPage.png"
+    alt="Results of prompt to create a landing page">
+<img class="long-shadow"
+    src="./images/FigmaMake_LandingPageExt.png"
+    alt="Results of prompt to create a landing page">
 
 **A few things to note:**
 

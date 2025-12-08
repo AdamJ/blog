@@ -158,7 +158,7 @@
                 </div>
             </nav>
             <nav id="nav_primary_container"
-                class="d-flex d-none--xs d-none--sm fd-column | w-100 | __soft-shadow"
+                class="d-flex d-none--xs d-none--sm fd-column | w-100 | bwidth-1 bstyle-dashed bcolor-neutral-500 | __soft-shadow"
                 mt-5="md"
                 maxw-sidebar="md"
                 maxh-sidebar="md"
@@ -243,10 +243,6 @@
                     {% endif %}
                 </menu>
 
-                <div id="nav_primary" class="pos-relative | fg-1 o-auto | bbwidth-1 bbstyle-dashed bcolor-neutral-500">
-                    {{ eleventyNavigationMenu }}
-                </div>
-
                 {% if collections.post.size > 0 %}
                     <a  href="/{{ libdocConfig.blogSlug }}/"
                         id="nav_primary_blog_link"
@@ -265,11 +261,16 @@
                         {% if pageUrlSplit[1] == 'tags'%}
                             aria-current="page"
                         {% endif %}
-                        class="d-flex ai-center | pt-5 pb-5 | fvs-wght-500 fs-4 td-none lsp-2 | c-neutral-900 cur-pointer">
+                        class="d-flex ai-center | pt-5 pb-5 | fvs-wght-500 fs-4 td-none lsp-2 | c-neutral-900 bbwidth-1 bbstyle-dashed bcolor-neutral-500 cur-pointer">
                         {% comment %} <span class="icon-tag-simple | c-primary-500"></span> {% endcomment %}
                         {{ libdocMessages.tagsList[pageLang] }}
                     </a>
                 {% endif %}
+
+                <div id="nav_primary"
+                    class="pos-relative | fg-1 o-auto">
+                    {{ eleventyNavigationMenu }}
+                </div>
             </nav>
         </div>
         <main class="pos-relative"
@@ -418,10 +419,10 @@
                     {% endif %}
                     <div class="w-100" d-none="sm,md"></div>
                     <div class="pl-5 | bbwidth-1 bbstyle-dashed bcolor-neutral-500" w-100="sm,md"></div>
-                    <a  href="https://github.com/ita-design-system/eleventy-libdoc"
+                    <a  href="https://github.com/Adamj/blog"
                         target="_blank"
                         class="d-flex ai-center gap-2 | pl-2 pr-2 | fvs-wght-400 fs-2 lsp-3 lh-3 td-none ws-nowrap">
-                        Blog {{ libdocUtils.version }}
+                        Adam's Blog {{ libdocUtils.version }}
                     </a>
                 </nav>
             </footer>

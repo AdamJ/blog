@@ -31,8 +31,8 @@ Although the demo is an HTML-based site, Storybook has the ability to run with p
 
 I started with a simple Button component (Storybook provided Button, Header, and Page examples to start with), applying the styles from casWOW and including the different variations that will be used in the project. Not all of Bootstrap's button styles are included, so I wanted to keep the documentation to only what we use, not everything that Bootstrap offers).
 
-The first issue that I encountere was adding the `btn-outline` variant, as it requires that the base variant (primary, secondary, etc.) be placed between `btn` and `outline`. Thankfully, I was able to reference examples online, with a simple cleanup request to Copilot to implement an outline variant.
+The first issue that I encountered was adding the `btn-outline` variant, as it requires that the base variant (primary, secondary, etc.) be placed between `btn` and `outline`. Thankfully, I was able to reference examples online, with a simple cleanup request to Copilot to implement an outline variant.
 
 ## Next steps
 
-As I add more component examples and expand the documentation, I'm hoping to add the theme-switcher (so that the development team can see how each component should look in both light and dark mode) as well as an [acessibility add-on](https://storybook.js.org/addons/@storybook/addon-a11y) that uses axe-core to test the components against a11y requirements.
+As I add more component examples and expand the documentation, I'm hoping to add the theme-switcher (so that the development team can see how each component should look in both light and dark mode) as well as an [accessibility add-on](https://storybook.js.org/addons/@storybook/addon-a11y) that uses axe-core to test the components against a11y requirements.

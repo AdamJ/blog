@@ -10,7 +10,7 @@ tags:
     - ai
 date: 2024-11-14
 ogImageUrl:
-author:
+author: AdamJ
 ---
 
 ## Examples
