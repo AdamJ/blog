@@ -1,9 +1,9 @@
 {
   "name": "eleventy-blog",
   "title": "Adam J. Jolicoeur's Blog",
-  "version": "0.1.0",
+  "version": "0.6.0",
   "homepage": "https://blog.adamjolicoeur.com",
-  "description": "A blog built on 11ty-libdoc",
+  "description": "This is the blog for my thoughts on web development and design.",
   "main": "index.js",
   "engines": {
     "node": "22"

@@ -2,27 +2,23 @@
     "siteTitle": "Blog",
     "siteDescription": "This is the blog for my thoughts on web development and design.",
     "author": "Adam Jolicoeur",
+    "blogAuthor": "Adam Jolicoeur",
+    "blogDescription": "This is the blog for my thoughts on web development and design.",
     "faviconUrl": "/assets/avatar.png",
     "gitLastModifiedDate": true,
-    "blogTitle": "Blog",
-    "blogDescription": "This is the blog for my thoughts on web development and design.",
     "productionUrl": "https://blog.adamjolicoeur.com",
     "customLinks": [
         {
-            "url": "https://www.adamjolicoeur.com",
-            "text": "Portfolio"
-        },
-        {
-            "url": "https://github.com/AdamJ/eleventy-blog",
-            "text": "GitHub"
+            "url": "/feed.xml",
+            "text": "Feed"
         },
         {
             "url": "https://www.linkedin.com/in/ajjolicoeur/",
             "text": "LinkedIn"
         },
         {
-            "url": "/feed.xml",
-            "text": "Feed"
+            "url": "https://github.com/AdamJ/eleventy-blog",
+            "text": "GitHub"
         }
     ],
     "editThisPageRootUrl": "https://github.com/AdamJ/eleventy-blog/blob/main"

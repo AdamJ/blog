@@ -25,13 +25,17 @@ From this initial prompt, I began the two-day process of creating my first web a
 
 For this, I decided to try out Gemini, as I had tried ChatGPT and Claude AI previously but was not too impressed with the results. I don't know if this was due to my prompts or the models, but it was enough to get me to try another system.
 
-![gemini](./images/gemini.png)
+<img class="long-shadow"
+    src="./images/gemini.png"
+    alt="gemini">
 
 ## The Prompts And Returns
 
 > What are some of the best tools for creating a native web application for managing magic card decks lists, a life counter, and have the ability to manage an event directly from the application insofar as to have a standings, tie-breakers, and breakdown of wins-loses-draws by each game for each player?
 
-![gemini-one](./images/gemini-one.png)
+<img class="long-shadow"
+    src="./images/gemini-one.png"
+    alt="gemini-one">
 
 This was my initial prompt, as I have wanted to create a new system for managing my local games and never really liked the way that I had to use multiple apps to handle matches, standings, and deck lists.
 
@@ -46,7 +50,9 @@ From this example tech stack, I followed up with this prompt:
 
 > Can you provide me with a basic framework for creating this application, including usable code for the life counter? The framework is React, using Material UI. The data will need to be saved locally until a user decides to export the data in a JSON formatted file, which I will be uploading to GitHub for reference.
 
-![gemini-two](./images/gemini-two.png)
+<img class="long-shadow"
+    src="./images/gemini-two.png"
+    alt="gemini-two">
 
 **Below is `App.js` code provided by Gemini**
 
@@ -56,7 +62,9 @@ This included explainers on how to use Material UI and why it was chosen, state 
 
 What came next was my first back-and-forth, where I had to explain to Gemini that the suggested `npx create-react-app mtg-life-counter` prompt would not work, as the CreateReactApp project is no longer maintained.
 
-![gemini-create-app](./images/gemini-create-app.png)
+<img class="long-shadow"
+    src="./images/gemini-create-app.png"
+    alt="gemini-create-app">
 
 **Me:**
 > how to I create a new react app when the 'create-react-app' package is no longer maintained?
@@ -74,7 +82,9 @@ I chose to use Vite and ran the suggested command `npm create vite@latest my-mtg
 
 Here is where I decided to throw in the PWA (Progressive Web App) requirement, testing if it could continue to build off of the prior pieces, using React with Vite.
 
-![gemini-webapp](./images/gemini-webapp.png)
+<img class="long-shadow"
+    src="./images/gemini-webapp.png"
+    alt="gemini-webapp">
 
 From there, I asked the following:
 

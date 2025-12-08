@@ -24,7 +24,7 @@ I started this project as I needed a way to track my daily tasks, but not by usi
 
 While I initially tried to make this just using Copilot, I kept running into stumbling blocks - either it used incorrect libraries, UI changes would come and go seemingly at random, or it'd just forget where it was and make similar changes over and over. Realizing that was getting me nowhere, I switched over the [Lovable](https://lovable.dev) to give that a go.
 
-Starting with the folloqing prompt:
+Starting with the following prompt:
 
 "
 I’d like to create a time clocking webapp, where users would start their day with a “start day” button and end their day with an “end day” button. Each “start day” button would begin a running timer that should be displayed to users in the navigation title, next to the sheet title.

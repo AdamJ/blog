@@ -24,7 +24,7 @@ export default {
         str = [...str];
         //    ^ es20XX spread to Array: keeps surrogate pairs
         let i = str.length, aRet = [];
-        
+
         while (i--) {
             var iC = str[i].codePointAt(0);
             if (iC < 65 || iC > 127 || (iC>90 && iC<97)) {
