@@ -9,7 +9,6 @@ tags:
     - development
 date: 2025-01-26
 ogImageUrl:
-author: AdamJ
 ---
 
 Trying to use Docker as a local development and general testing environment.

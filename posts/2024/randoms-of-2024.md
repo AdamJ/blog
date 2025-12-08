@@ -7,7 +7,6 @@ tags:
     - post
 date: 2024-12-12
 ogImageUrl:
-author: AdamJ
 ---
 
 Randomness of 2024

@@ -3,7 +3,8 @@ title: Links
 description: Various links across my domains
 layout: libdoc_page.liquid
 permalink: links/index.html
-date: 2025-12-07
+date: false
+author: false
 eleventyNavigation:
     key: Links
 ---

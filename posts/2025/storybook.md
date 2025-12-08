@@ -10,7 +10,6 @@ tags:
     - first
 date: 2025-10-03
 ogImageUrl:
-author: AdamJ
 ---
 
 In my current role at [CAS](https://www.componentassembly.com), I not only manage the various products and internal applications, but design the interfaces and create the documentation for internal tooling.

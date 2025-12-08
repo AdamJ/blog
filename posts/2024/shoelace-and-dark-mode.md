@@ -9,8 +9,6 @@ tags:
     - shoelace
 date: 2024-11-02
 ogImageUrl:
-author: AdamJ
-tocEnabled: true
 ---
 
 ## Why?
