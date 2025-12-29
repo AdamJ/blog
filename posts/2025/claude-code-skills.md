@@ -248,6 +248,7 @@ The skill ensured:
 Comparing this to previous attempts without the skill, the differences were striking:
 
 **Without the skill**, Claude would typically generate:
+{% raw %}
 ```jsx
 <div style={{
   background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -259,6 +260,7 @@ Comparing this to previous attempts without the skill, the differences were stri
   {/* Generic, templated feel */}
 </div>
 ```
+{% endraw %}
 
 **With the frontend-design skill**, Claude generated:
 - Intentional layout choices (split-screen hero, asymmetric grids)
