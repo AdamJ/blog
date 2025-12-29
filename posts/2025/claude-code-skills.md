@@ -102,93 +102,151 @@ You are an expert frontend developer specializing in modern web development.
 
 ## Testing the Skill
 
-The real test came when I needed to build a new feature for one of my projects. Instead of just asking Claude Code directly, I invoked the skill:
+The real test came when I wanted to create a landing page for a project. Instead of just asking Claude Code directly, I invoked the frontend-design skill:
 
 ```bash
-/skill frontend
+/skill frontend-design
 ```
 
 ### What Worked Well
 
 The skill invocation immediately changed Claude's approach:
 
-1. **Structured Thinking**: Claude started by asking about the component requirements and existing patterns in the codebase
-2. **Type-First Approach**: All code generated included proper TypeScript interfaces before implementation
+1. **Structured Thinking**: Claude started by asking about the page requirements and design goals
+2. **Design-First Approach**: The skill encouraged thinking about layout, hierarchy, and visual design before jumping into code
 3. **Consistent Patterns**: The skill ensured that new code matched existing architectural decisions
-4. **Testing Coverage**: Tests were written alongside the implementation, not as an afterthought
+4. **Responsive by Default**: Mobile-first thinking was baked into the process
 
 ### Example Output
 
-Here's a snippet of what Claude generated when I asked it to create a new data table component:
+Here's a snippet of what Claude generated when I asked it to create a landing page:
 
 ```typescript
-// types/DataTable.types.ts
-export interface Column<T> {
-  key: keyof T;
-  header: string;
-  render?: (value: T[keyof T], row: T) => React.ReactNode;
-  sortable?: boolean;
-  width?: string;
+// components/LandingPage/LandingPage.tsx
+import React from 'react';
+import { Button } from '@/components/Button';
+import styles from './LandingPage.module.css';
+
+interface LandingPageProps {
+  title: string;
+  subtitle: string;
+  ctaText: string;
+  onCtaClick: () => void;
+  features: {
+    icon: React.ReactNode;
+    title: string;
+    description: string;
+  }[];
 }
 
-export interface DataTableProps<T> {
-  data: T[];
-  columns: Column<T>[];
-  onRowClick?: (row: T) => void;
-  loading?: boolean;
-  emptyMessage?: string;
+export function LandingPage({
+  title,
+  subtitle,
+  ctaText,
+  onCtaClick,
+  features
+}: LandingPageProps) {
+  return (
+    <div className={styles.container}>
+      <section className={styles.hero}>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.subtitle}>{subtitle}</p>
+        <Button variant="primary" onClick={onCtaClick}>
+          {ctaText}
+        </Button>
+      </section>
+
+      <section className={styles.features}>
+        <div className={styles.featureGrid}>
+          {features.map((feature, index) => (
+            <div key={index} className={styles.featureCard}>
+              <div className={styles.featureIcon}>{feature.icon}</div>
+              <h3 className={styles.featureTitle}>{feature.title}</h3>
+              <p className={styles.featureDescription}>{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+```
+
+```css
+/* components/LandingPage/LandingPage.module.css */
+.container {
+  width: 100%;
+  min-height: 100vh;
 }
 
-// components/DataTable/DataTable.tsx
-import React, { useState, useMemo } from 'react';
-import { Column, DataTableProps } from '@/types/DataTable.types';
-import styles from './DataTable.module.css';
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2rem;
+  text-align: center;
+}
 
-export function DataTable<T extends Record<string, any>>({
-  data,
-  columns,
-  onRowClick,
-  loading = false,
-  emptyMessage = 'No data available'
-}: DataTableProps<T>) {
-  const [sortConfig, setSortConfig] = useState<{
-    key: keyof T;
-    direction: 'asc' | 'desc';
-  } | null>(null);
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
 
-  const sortedData = useMemo(() => {
-    if (!sortConfig) return data;
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: var(--color-text-secondary);
+}
 
-    return [...data].sort((a, b) => {
-      const aVal = a[sortConfig.key];
-      const bVal = b[sortConfig.key];
+.features {
+  padding: 4rem 2rem;
+  background: var(--color-background-alt);
+}
 
-      if (aVal < bVal) return sortConfig.direction === 'asc' ? -1 : 1;
-      if (aVal > bVal) return sortConfig.direction === 'asc' ? 1 : -1;
-      return 0;
-    });
-  }, [data, sortConfig]);
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  // ... rest of component
+.featureCard {
+  padding: 2rem;
+  background: var(--color-background);
+  border-radius: var(--radius-card);
+  box-shadow: var(--elevation-sm);
 }
 ```
 
 The skill ensured:
-- Proper generic typing for reusability
-- Separation of types into a dedicated file
-- CSS modules for styling
-- Memoization for performance
-- Accessibility considerations
+- Proper TypeScript interfaces for props
+- Separation of styles into CSS modules
+- Responsive design using CSS Grid and clamp()
+- CSS custom properties for theming
+- Semantic HTML structure
+- Accessible markup with proper headings
 
 ## Challenges and Learnings
 
 ### Challenge 1: Skill Scope
 
-Initially, I made the skill too broad. It tried to handle everything from React to Vue to Angular. I quickly learned that focused skills work better. I split it into separate skills:
+I've noticed that my initial skill is quite broad - it tries to handle everything from React to Vue to Angular, plus testing, performance, and more. This is something I need to address.
+
+**Finding**: Focused skills likely work better than broad, catch-all skills.
+
+**Next Steps**: I plan to split this into separate, focused skills:
 
 - `frontend-react`: React-specific development
 - `frontend-testing`: Testing and accessibility
 - `frontend-performance`: Performance optimization
+
+This refactoring should make each skill more targeted and effective for specific use cases.
 
 ### Challenge 2: Context Awareness
 
@@ -217,20 +275,20 @@ Too many prescriptive rules made the skill rigid. I found a balance by:
 
 ## Skill Composition
 
-One powerful pattern I discovered is composing skills. For a complex feature, I could chain skills:
+One powerful pattern I've discovered is the potential for composing skills. For a complex feature, you could chain skills:
 
 ```bash
 # First, plan the architecture
 /skill architecture-planning
 
 # Then implement frontend
-/skill frontend-react
+/skill frontend-design
 
 # Finally, add tests
-/skill frontend-testing
+/skill testing
 ```
 
-This modular approach keeps each skill focused while allowing complex workflows.
+This modular approach would keep each skill focused while allowing complex workflows. This is something I'm excited to explore further once I've refactored my skills to be more focused.
 
 ## Best Practices for Writing Skills
 
