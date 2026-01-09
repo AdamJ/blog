@@ -8,6 +8,7 @@ tags:
     - homebrew
     - software
     - macOS
+    - tools
 date: 2026-01-09
 ogImageUrl:
 ---
@@ -33,7 +34,7 @@ My particular usage of Homebrew is for installing some basic software - 1Passwor
 ### My Casks
 
 > Casks are what Homebrew uses to skip the "to install, drag this icon..." step with manually installations
-> 
+>
 > **Cask names are written as shown in the terminal - copy these to install**
 
 - 1password-cli
