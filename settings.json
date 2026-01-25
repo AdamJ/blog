@@ -9,6 +9,10 @@
     "productionUrl": "https://blog.adamjolicoeur.com",
     "customLinks": [
         {
+            "url": "/social-feed/",
+            "text": "Social"
+        },
+        {
             "url": "/feed.xml",
             "text": "Feed"
         },
