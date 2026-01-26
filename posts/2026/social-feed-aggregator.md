@@ -8,6 +8,7 @@ tags:
     - javascript
     - api
     - development
+    - claude
 date: 2026-01-25
 ogImageUrl:
 ---
@@ -30,7 +31,7 @@ I wanted to solve this by creating a single page on my blog that:
 
 ## The Solution
 
-With the help of Claude Code, I built a client-side JavaScript solution that fetches data from the public APIs provided by Bluesk and GitHub, and displays it in a clean, filterable interface. It is up today on my [Social Feed page](/social-feed/).
+With the help of Claude Code, I built a client-side JavaScript solution that fetches data from the public APIs provided by Bluesky and GitHub, and displays it in a clean, filterable interface. It is up today on my [Social Feed page](/social-feed/).
 
 ### Architecture Overview
 
@@ -62,11 +63,11 @@ async function fetchBlueskyFeed() {
 }
 ```
 
-Between the use of Bluesky's [documentation]() and the AT Protocol, it was surprisingly straightforward to implement.
+Between the use of Bluesky's [documentation on Custom Feeds](https://docs.bsky.app/docs/starter-templates/custom-feeds) and the AT Protocol, it was surprisingly straightforward to implement.
 
 ### Fetching from GitHub
 
-I've know for a while that GitHub has a well-documented, public API, so I wanted to try to surface the following activities:
+I've know for a while that GitHub has a [well-documented](https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28), public API, so I wanted to try to surface the following activities:
 
 - Push commits
 - Pull request actions
